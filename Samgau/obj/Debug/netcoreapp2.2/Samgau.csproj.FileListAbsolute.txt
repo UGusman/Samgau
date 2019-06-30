@@ -1,0 +1,14 @@
+E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.deps.json
+E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.runtimeconfig.json
+E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.runtimeconfig.dev.json
+E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.dll
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.csprojAssemblyReference.cache
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.csproj.CoreCompileInputs.cache
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorAssemblyInfo.cache
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorAssemblyInfo.cs
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.AssemblyInfoInputs.cache
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.AssemblyInfo.cs
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorTargetAssemblyInfo.cache
+E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.pdb
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.dll
+E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.pdb
