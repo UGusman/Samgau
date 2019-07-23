@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\dotnet\\09\\Samgau\\Samgau\\Samgau.csproj": {}
+    "C:\\Users\\Fidelis\\Desktop\\007\\Samgau-master\\Samgau\\Samgau.csproj": {}
   },
   "projects": {
-    "E:\\dotnet\\09\\Samgau\\Samgau\\Samgau.csproj": {
+    "C:\\Users\\Fidelis\\Desktop\\007\\Samgau-master\\Samgau\\Samgau.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dotnet\\09\\Samgau\\Samgau\\Samgau.csproj",
+        "projectUniqueName": "C:\\Users\\Fidelis\\Desktop\\007\\Samgau-master\\Samgau\\Samgau.csproj",
         "projectName": "Samgau",
-        "projectPath": "E:\\dotnet\\09\\Samgau\\Samgau\\Samgau.csproj",
-        "packagesPath": "C:\\Users\\cyber\\.nuget\\packages\\",
-        "outputPath": "E:\\dotnet\\09\\Samgau\\Samgau\\obj\\",
+        "projectPath": "C:\\Users\\Fidelis\\Desktop\\007\\Samgau-master\\Samgau\\Samgau.csproj",
+        "packagesPath": "C:\\Users\\Fidelis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fidelis\\Desktop\\007\\Samgau-master\\Samgau\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\cyber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fidelis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "FluentNHibernate": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -61,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

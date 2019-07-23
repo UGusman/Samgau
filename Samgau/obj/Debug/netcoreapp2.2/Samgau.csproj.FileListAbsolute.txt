@@ -12,3 +12,17 @@ E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorTargetAssemblyInf
 E:\dotnet\09\Samgau\Samgau\bin\Debug\netcoreapp2.2\Samgau.pdb
 E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.dll
 E:\dotnet\09\Samgau\Samgau\obj\Debug\netcoreapp2.2\Samgau.pdb
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\bin\Debug\netcoreapp2.2\Samgau.deps.json
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\bin\Debug\netcoreapp2.2\Samgau.runtimeconfig.json
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\bin\Debug\netcoreapp2.2\Samgau.runtimeconfig.dev.json
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\bin\Debug\netcoreapp2.2\Samgau.dll
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\bin\Debug\netcoreapp2.2\Samgau.pdb
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.csprojAssemblyReference.cache
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.csproj.CoreCompileInputs.cache
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorAssemblyInfo.cache
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorAssemblyInfo.cs
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.AssemblyInfoInputs.cache
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.AssemblyInfo.cs
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.RazorTargetAssemblyInfo.cache
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.dll
+C:\Users\Fidelis\Desktop\007\Samgau-master\Samgau\obj\Debug\netcoreapp2.2\Samgau.pdb

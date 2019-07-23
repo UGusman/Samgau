@@ -6,6 +6,8 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -40,8 +42,21 @@ namespace Samgau
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<PersoneContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IPersoneRepository, PersoneRepository>();
+            //services.AddDbContext<PersoneContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddTransient<IPersoneRepository, PersoneRepository>();
+
+            var connStr = Configuration.GetConnectionString("DefaultConnection");
+
+            var _sessionFactory = Fluently.Configure()
+                          .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connStr))
+                          .Mappings(m => m.FluentMappings.AddFromAssembly(GetType().Assembly)).BuildConfiguration()
+                          .BuildSessionFactory();
+
+            services.AddScoped(factory =>
+            {
+                return _sessionFactory.OpenSession();
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSwaggerGen(c =>
