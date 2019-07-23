@@ -44,6 +44,7 @@ namespace Samgau
         {
             //services.AddDbContext<PersoneContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddTransient<IPersoneRepository, PersoneRepository>();
+            services.AddTransient<IHibernateRepository, HibernateRepository>();
 
             var connStr = Configuration.GetConnectionString("DefaultConnection");
 
@@ -125,7 +126,7 @@ namespace Samgau
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
             app.UseHttpsRedirection();
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseMvc();
         }
     }

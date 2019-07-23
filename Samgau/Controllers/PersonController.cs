@@ -14,29 +14,29 @@ namespace Samgau.Controllers
 {
     
     [Route("api/[controller]")]
-    [Authorize]
+    //[Authorize]
     [ApiController]
     public class PersonController : ControllerBase
     {
         //private readonly IPersoneRepository _personeRepository;
-        private readonly ISession _session;
-        public PersonController(ISession session)
+        private readonly IHibernateRepository _hibernateRepository;
+        public PersonController(IHibernateRepository hibernateRepository)
         {
-            _session = session;
+            _hibernateRepository = hibernateRepository;
             //_personeRepository = personeRepository;
         }
 
 
         [HttpGet]
-        public ActionResult<IEnumerable<Persone>> Get()
+        public ActionResult<IEnumerable<PersonGetViewModel>> Get()
         {
-            return _session.Query<Persone>().ToList();
+            return _hibernateRepository.Get();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Persone> GetById(int id)
+        public ActionResult<PersoneViewModel> GetById(int id)
         {
-            return _session.Query<Persone>().Where(x => x.Id == id).FirstOrDefault();
+            return _hibernateRepository.FindById(id);
         }
 
 
@@ -45,51 +45,17 @@ namespace Samgau.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest();
-            using (var transaction = _session.BeginTransaction())
-            {
-                try
-                {
-                    _session.Save(new Persone
-                    {
-                        Iin = value.Iin,
-                        FirstName = value.FirstName,
-                        LastName = value.LastName,
-                        BirthDate = value.BirthDate
-                    });
-                    transaction.Commit();
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex);
-                }
-
-            }
-            
+            _hibernateRepository.Add(value);         
             
             return Ok();
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] Persone value)
+        public IActionResult Put([FromBody] PersonEditeViewModel value)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
-            using (var transaction = _session.BeginTransaction())
-            {
-                try
-                {
-                    _session.Update(value);
-                    _session.Transaction.Commit();
-                    transaction.Commit();
-                   
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex);
-                }
-               
-                
-            }
+            _hibernateRepository.Edite(value);
            return Ok();
 
         }
@@ -97,21 +63,7 @@ namespace Samgau.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            using (var transaction = _session.BeginTransaction())
-            {
-                try
-                {
-                    _session.Delete(new Persone
-                    {
-                        Id = id
-                    });
-                    transaction.Commit();
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex);
-                }
-            }
+            _hibernateRepository.Delete(id);
         }
 
         //[HttpGet]
